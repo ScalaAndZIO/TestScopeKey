@@ -1,6 +1,51 @@
+//cross building with two versions
+lazy val scala210 = "2.10.2"
+lazy val scala211 = "2.11.12"
+lazy val supportedScalaVersions = List(scala210, scala211)
+
+ThisBuild / organization := "com.example"
+ThisBuild / version      := "0.1.0-SNAPSHOT"
+ThisBuild / scalaVersion := scala210
+
+
+lazy val master = (project in file("."))
+  .aggregate(util, core)
+  .settings(crossScalaVersions := Nil)
+
+//Default case (or compile )=> core/psk
+//test => core/test:psk
+//run => core/runtime:psk
+lazy val core = (project in file("core"))
+  .settings(
+    name in Test := "CoreTestapp",
+    name in Runtime := "CoreRunTimeApp",
+    name in Compile := "CoreCompileApp",
+    crossScalaVersions := List(scala210),
+    packageBin in Compile := file(s"${name.value}_${scalaBinaryVersion.value}.jar"),
+    myPsks
+  )
+
+//Default case (or compile )=> util/psk
+//test => util/test:psk
+//run => util/runtime:psk
+lazy val util = (project in file("util"))
+  .settings(
+    //    commonSettings,
+    crossScalaVersions := supportedScalaVersions,
+    name in Test := "utilTestapp",
+    name in Runtime := "utilRunTimeApp",
+    name in Compile := "utilCompileApp",
+    packageBin in Compile := file(s"${name.value}_${scalaBinaryVersion.value}.jar"),
+    myPsks,
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test",
+    TaskKey[Unit]("mytestTask") := (testOnly in Test).toTask(" mytests.MyTest").value,
+    TaskKey[Unit]("mytestTask2") := (testOnly in Test).toTask(" mytests.MyTest2").value
+
+  )
+
 import sbt.taskKey
 
-name in Scope.Global:= "Masterapp"
+name in Scope.Global := "Masterapp"
 
 name in Test := "Testapp"
 
@@ -21,7 +66,9 @@ sampleTask := {
 }
 
 //test:sampleTask
-sampleTask in Test := {val sum = (intTask in Compile).value * 3; println(sum); sum}
+sampleTask in Test := {
+  val sum = (intTask in Compile).value * 3; println(sum); sum
+}
 
 lazy val psk = taskKey[Unit]("Print Scoped Key")
 
@@ -29,42 +76,8 @@ val pskSetting = psk := {
   println("***** [APP NAME] " + name.value)
 }
 val myPsks = Seq(Compile, Test, Runtime) flatMap { conf =>
-  inConfig(conf)( Seq(pskSetting) )
+  inConfig(conf)(Seq(pskSetting))
 }
 myPsks
 
-lazy val commonSettings = Seq(
-  organization := "com.example",
-  version := "0.1.0-SNAPSHOT",
-  scalaVersion := "2.12.2"
-)
 
-//Default case (or compile )=> core/psk
-//test => core/test:psk
-//run => core/runtime:psk
-lazy val core = (project in file("core"))
-  .settings(
-    name in Test := "CoreTestapp",
-    name in Runtime := "CoreRunTimeApp",
-    name in Compile := "CoreCompileApp",
-    commonSettings,
-    packageBin in Compile := file(s"${name.value}_${scalaBinaryVersion.value}.jar"),
-    myPsks
-  )
-
-//Default case (or compile )=> util/psk
-//test => util/test:psk
-//run => util/runtime:psk
-lazy val util = (project in file("util"))
-  .settings(
-    commonSettings,
-    name in Test := "utilTestapp",
-    name in Runtime := "utilRunTimeApp",
-    name in Compile := "utilCompileApp",
-    packageBin in Compile := file(s"${name.value}_${scalaBinaryVersion.value}.jar"),
-    myPsks
-
-  )
-
-lazy val master = (project in file("."))
-  .aggregate(util, core)

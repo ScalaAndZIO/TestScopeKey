@@ -56,3 +56,57 @@ util/runtime:psk
 util/test:psk
 util/psk
 psk
+;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/root/.IdeaIC2017.3/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+exit
+core/psk
+psk
+core/psk
+core/test:psk
+inspect tree core/test
+set asciiGraphWidth := 150
+set asciiGraphWidth := 10000 'inspect tree clean'
+sbt 'set asciiGraphWidth := 10000' 'inspect tree clean'
+'set asciiGraphWidth := 10000' 'inspect tree clean'
+set asciiGraphWidth := 10000 inspect tree clean
+'set asciiGraphWidth := 10000' 'inspect tree clean'
+set asciiGraphWidth := <150>
+set asciiGraphWidth := 10000
+asciiGraphWidth :=10000
+asciiGraphWidth := 10000
+set asciiGraphWidth := 10000
+sbt 'set asciiGraphWidth := 10000' 'inspect tree clean'
+'set asciiGraphWidth := 10000' 'inspect tree clean'
+test
+core/test:psk
+core/test
+util/test
+util/test:psk
+clean
+tasks
+help tasks 
+util/myTask
+test
+mytestTask
+util:mytestTask
+util/mytestTask
+util/test:mytestTask
+;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/root/.IdeaIC2017.3/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+exit
+util/test:mytestTask
+util/mytestTask
+util/test
+util/mytestTask2
+;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/root/.IdeaIC2017.3/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+exit
+;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/root/.IdeaIC2017.3/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+exit
+++ 2.11.12 test
+++2.11.12 test
+++ 2.11.12
+++ 2.11.12 -v test
+++ 2.11.12 
+reload
+++ 2.11.12 
+++ 2.10.2 
+++ 2.10.2 -v
+++ 2.10.2 -v test
