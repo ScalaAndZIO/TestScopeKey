@@ -9,13 +9,15 @@ ThisBuild / scalaVersion := scala210
 
 
 lazy val master = (project in file("."))
-  .aggregate(util, core)
+  .aggregate(common,util, core)
   .settings(crossScalaVersions := Nil)
+
+lazy val common = project
 
 //Default case (or compile )=> core/psk
 //test => core/test:psk
 //run => core/runtime:psk
-lazy val core = (project in file("core"))
+lazy val core = project
   .settings(
     name in Test := "CoreTestapp",
     name in Runtime := "CoreRunTimeApp",
@@ -24,11 +26,12 @@ lazy val core = (project in file("core"))
     packageBin in Compile := file(s"${name.value}_${scalaBinaryVersion.value}.jar"),
     myPsks
   )
+  .dependsOn(common)
 
 //Default case (or compile )=> util/psk
 //test => util/test:psk
 //run => util/runtime:psk
-lazy val util = (project in file("util"))
+lazy val util = project
   .settings(
     //    commonSettings,
     crossScalaVersions := supportedScalaVersions,
@@ -40,8 +43,8 @@ lazy val util = (project in file("util"))
     libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test",
     TaskKey[Unit]("mytestTask") := (testOnly in Test).toTask(" mytests.MyTest").value,
     TaskKey[Unit]("mytestTask2") := (testOnly in Test).toTask(" mytests.MyTest2").value
-
   )
+  .dependsOn(common)
 
 import sbt.taskKey
 
