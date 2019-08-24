@@ -12,6 +12,10 @@
             <option value="$PROJECT_DIR$/common/project" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/core/project" />
+            <option value="$PROJECT_DIR$/js" />
+            <option value="$PROJECT_DIR$/js/project" />
+            <option value="$PROJECT_DIR$/native" />
+            <option value="$PROJECT_DIR$/native/project" />
             <option value="$PROJECT_DIR$/project" />
             <option value="$PROJECT_DIR$/util" />
             <option value="$PROJECT_DIR$/util/project" />

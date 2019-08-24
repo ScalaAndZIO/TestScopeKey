@@ -6,8 +6,12 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-build.iml" filepath="$PROJECT_DIR$/.idea/modules/common-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core.iml" filepath="$PROJECT_DIR$/.idea/modules/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core-build.iml" filepath="$PROJECT_DIR$/.idea/modules/core-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/js.iml" filepath="$PROJECT_DIR$/.idea/modules/js.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/js-build.iml" filepath="$PROJECT_DIR$/.idea/modules/js-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/master.iml" filepath="$PROJECT_DIR$/.idea/modules/master.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/master-build.iml" filepath="$PROJECT_DIR$/.idea/modules/master-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/native.iml" filepath="$PROJECT_DIR$/.idea/modules/native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/native-build.iml" filepath="$PROJECT_DIR$/.idea/modules/native-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/util.iml" filepath="$PROJECT_DIR$/.idea/modules/util.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/util-build.iml" filepath="$PROJECT_DIR$/.idea/modules/util-build.iml" />
     </modules>
