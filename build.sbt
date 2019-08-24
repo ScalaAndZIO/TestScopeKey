@@ -12,9 +12,6 @@ lazy val master = (project in file("."))
 
 lazy val common = project
 
-//Default case (or compile )=> core/psk
-//test => core/test:psk
-//run => core/runtime:psk
 lazy val core = project
   .settings(
     name in Test := "CoreTestapp",
@@ -27,9 +24,6 @@ lazy val core = project
   )
   .dependsOn(common)
 
-//Default case (or compile )=> util/psk
-//test => util/test:psk
-//run => util/runtime:psk
 lazy val util = project
   .settings(
     crossScalaVersions := supportedScalaVersions,
