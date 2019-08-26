@@ -180,3 +180,69 @@ jsTask
 js/jsTask
 ;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/root/.IdeaIC2017.3/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
 exit
+core/test
+core/run CoreMain
+core/runMain CoreMain
+runMain CoreMain
+core/runMain
+core/runMain CoreMain
+fastOptJS
+js/fastOptJS
+js/JsTest
+js/test
+js/testOnly JsTest
+jsTask
+js/jsTask
+native/nativeTask
+native/testOnly MyNative
+core/testOnly TestCore
+core/test
+js/JsTest
+util/TestUtil
+util/TestUtil2
+util/mytests.TestUtil
+util/mytests.TestUtil2
+util/TestUtil
+clean
+util/TestUtil
+util/testOnly TestUtil
+testOnly ta
+testOnly tab
+util/*TestUtil
+util/testOnly *TestUtil
+util/testOnly *TestUtil2
+native/testOnly *NativeTest
+native/testOnly *TestNative
+native/TestNative
+js/testOnly *JsTest
+js/jsTask
+core/runMain *CoreMain
+core/run CoreMain
+core/run
+core/runMain *CoreMain
+core/runMain *mains/CoreMain
+core/runMain *CoreMain
+core/run *CoreMain
+core/run
+core/runMain *mains.CoreMain
+util/MyMain
+run
+compile/run
+runMain core/mains.CoreMain
+runMain mains.CoreMain
+runMain CoreMain
+runMain mains.MyNative
+core/runMain *CoreMain
+core/runMain CoreMain
+;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/root/.IdeaIC2017.3/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+exit
+core/runMain mains.CoreMain
+core/runMain CoreMain
+core/runMain mains.CoreMain
+core/run
+;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/root/.IdeaIC2017.3/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+exit
+;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/root/.IdeaIC2017.3/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+exit
+;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/root/.IdeaIC2017.3/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+exit
