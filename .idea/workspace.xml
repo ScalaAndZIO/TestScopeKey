@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe28bbb7-def3-4b59-acf5-530fc2156bda" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/common-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/common-build.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/core-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/core-build.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/core.iml" afterPath="$PROJECT_DIR$/.idea/modules/core.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/js-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/js-build.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/js.iml" afterPath="$PROJECT_DIR$/.idea/modules/js.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/master-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/master-build.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/native-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/native-build.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/native.iml" afterPath="$PROJECT_DIR$/.idea/modules/native.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/util-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/util-build.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/util.iml" afterPath="$PROJECT_DIR$/.idea/modules/util.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/MyHtml.html" afterPath="$PROJECT_DIR$/MyHtml.html" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
-      <change beforePath="$PROJECT_DIR$/js/src/main/scala/mains/JsMain.scala" afterPath="$PROJECT_DIR$/js/src/main/scala/mains/JsMain.scala" />
-      <change beforePath="$PROJECT_DIR$/native/src/test/scala/mytests/NativeTest.scala" afterPath="$PROJECT_DIR$/native/src/test/scala/mytests/NativeTest.scala" />
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/aggregationprojcet-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/aggregationprojcet-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" />
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/aggregationprojcet-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/aggregationprojcet-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" />
       <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-aggregationprojcet-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-aggregationprojcet-build-compile-internal.xml" />
@@ -33,7 +19,6 @@
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
       <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" />
       <change beforePath="$PROJECT_DIR$/target/.history" afterPath="$PROJECT_DIR$/target/.history" />
-      <change beforePath="$PROJECT_DIR$/util/src/test/scala/mytests/TestUtil.scala" afterPath="$PROJECT_DIR$/util/src/test/scala/mytests/TestUtil.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -657,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566804367860</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update sbt">
+      <created>1566816199312</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1566816199312</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -706,7 +698,8 @@
     <MESSAGE value="scope update" />
     <MESSAGE value="Cross compile version" />
     <MESSAGE value="add native and scalajs" />
-    <option name="LAST_COMMIT_MESSAGE" value="add native and scalajs" />
+    <MESSAGE value="update sbt" />
+    <option name="LAST_COMMIT_MESSAGE" value="update sbt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
